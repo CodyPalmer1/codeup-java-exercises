@@ -54,8 +54,8 @@ public class practiceJavaSept28 {
         if(userNum < 0){
 
         }
-        System.out.println("The odd numbers are :" + );
-        System.out.println(" The Sum of odd Natural Number upto 10 terms : " + );
+//        System.out.println("The odd numbers are :" + );
+//        System.out.println(" The Sum of odd Natural Number upto 10 terms : " + );
 
 //        Write a program in Java to display the pattern like right angle triangle with a number.
 //        Read the number using the Scanner class.

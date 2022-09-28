@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
-        System.out.printf("The value of pi is approximately %s\n", pi);
+        System.out.printf("The value of pi is approximately %.4f. \n", pi);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //option + enter to get import from scanner
         System.out.print("Enter a number:");
         int userInput = scanner.nextInt();
         System.out.println("You entered: --> \"" + userInput + "\" <--");
@@ -31,7 +31,6 @@ public class ConsoleExercises {
         int perimeter = (length * 2) + (width * 2);
         System.out.println("The area of the room is: " + area);
         System.out.println("The perimeter of the room is: " + perimeter);
-
     }
 }
 
