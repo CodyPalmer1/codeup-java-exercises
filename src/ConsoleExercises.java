@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
@@ -27,9 +28,11 @@ public class ConsoleExercises {
         System.out.print("Please enter the width of the room in feet: ");
         int width = scanner.nextInt();
         int area = (length * width);
-        int perimeter =  (length*2) + (width*2);
+        int perimeter = (length * 2) + (width * 2);
         System.out.println("The area of the room is: " + area);
         System.out.println("The perimeter of the room is: " + perimeter);
 
     }
 }
+
+
