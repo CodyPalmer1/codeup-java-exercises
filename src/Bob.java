@@ -1,18 +1,28 @@
 import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Say something to Bob: ");
-        String userInput = scanner.nextLine();
+        boolean converstition = true;
+//        do {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Say something to Bob: ");
+            String userInput = scanner.nextLine();
 
-        if(userInput.endsWith("?")){
-            System.out.println("Sure");
-        } else if (userInput.endsWith("!")){
-            System.out.println("Whoa, chill out!");
-        } else if (userInput.equals("")){
-            System.out.println("Fine. Be that way!");
-        } else {
-            System.out.println("Whatever.");
-        }
+            if (userInput.endsWith("?")) {
+                System.out.println("Sure");
+            } else if (userInput.endsWith("!")) {
+                System.out.println("Whoa, chill out!");
+            } else if (userInput.isBlank()) {
+                System.out.println("Fine. Be that way!");
+            } else {
+                System.out.println("Whatever.");
+            }
+            System.out.println("Would like to keep taking to Bob? (Y/N)");
+            String userInput2 = scanner.nextLine();
+            if (userInput2.equalsIgnoreCase("y")){
+                converstition = true;
+            } else if (userInput2.equalsIgnoreCase("n")){
+                converstition = false;
+            }
+//        }while(converstition == true);
     }
 }
