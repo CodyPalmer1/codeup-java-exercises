@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
-        boolean converstition = true;
+        boolean conversation = true;
 //        do {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Say something to Bob: ");
@@ -19,9 +19,9 @@ public class Bob {
             System.out.println("Would like to keep taking to Bob? (Y/N)");
             String userInput2 = scanner.nextLine();
             if (userInput2.equalsIgnoreCase("y")){
-                converstition = true;
+                conversation = true;
             } else if (userInput2.equalsIgnoreCase("n")){
-                converstition = false;
+                conversation = false;
             }
 //        }while(converstition == true);
     }
