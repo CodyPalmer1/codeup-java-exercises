@@ -1,5 +1,5 @@
 package shapes;
-public class Square extends Quadrilateral{
+public class Square extends Quadrilateral {
 
     @Override
     public double getPerimeter() {
