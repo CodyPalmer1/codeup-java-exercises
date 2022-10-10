@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class PractiveJavaOct9Extends extends PracticeJavaOct9 {
     Scanner scanner = new Scanner(System.in);
+    double userHeight;
+    double userWidth;
+    double userLength;
 
     public static void main(String[] args) {
         getLength();
@@ -25,6 +28,6 @@ public class PractiveJavaOct9Extends extends PracticeJavaOct9 {
     }
 
     void setVolume() {
-        userVolume =
+        userHeight * userWidth * userLength
     }
 }
