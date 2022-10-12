@@ -7,10 +7,10 @@ public class PractiveJavaOct9Extends extends PracticeJavaOct9 {
     double userLength;
 
     public static void main(String[] args) {
-        getLength();
-        getWidth();
-        getHeight();
-        setVolume();
+//        getLength();
+//        getWidth();
+//        getHeight();
+//        setVolume();
     }
     void getLength() {
         System.out.println("Please enter a length: ");
@@ -28,6 +28,6 @@ public class PractiveJavaOct9Extends extends PracticeJavaOct9 {
     }
 
     void setVolume() {
-        userHeight * userWidth * userLength
+//        userHeight * userWidth * userLength
     }
 }
