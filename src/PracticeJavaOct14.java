@@ -22,10 +22,23 @@ public class PracticeJavaOct14 {
                 int triangleArea = (base * height) / 2;
                 System.out.println("The area of your triangle is: " + triangleArea);
             } else if (knowBase.equalsIgnoreCase("no") || knowBase.equalsIgnoreCase("n"){
-
+                System.out.println("Please enter the hypotenuse of your triangle: ");
+                int hypotenuse = scanner.nextInt();
+                System.out.println("Please enter side two of your triangle: ");
+                int sideTwo = scanner.nextInt();
+                System.out.println("Please enter side three of your triangle: ");
+                int sideThree = scanner.nextInt();
+                int s = (hypotenuse + sideTwo + sideThree)/2;
+                int areaTriangle = (int) Math.sqrt((s*(s-sideTwo)*(s-sideThree)*(s-hypotenuse)));
             }
         } else if(Objects.equals(triangleAnswer, "2")){
+            System.out.println("Is your triangle a right triangle? [Y/N]");
+            String rightTriYN = scanner.nextLine();
+            if(rightTriYN.equalsIgnoreCase("yes") || rightTriYN.equalsIgnoreCase("y")) {
 
+            } else if (rightTriYN.equalsIgnoreCase("no") || rightTriYN.equalsIgnoreCase("n")){
+
+            }
         }
 
     }
