@@ -35,7 +35,12 @@ public class PracticeJavaOct14 {
             System.out.println("Is your triangle a right triangle? [Y/N]");
             String rightTriYN = scanner.nextLine();
             if(rightTriYN.equalsIgnoreCase("yes") || rightTriYN.equalsIgnoreCase("y")) {
-
+                System.out.println("Please enter the base: ");
+                int base = scanner.nextInt();
+                System.out.println("Please enter the area: ");
+                int area = scanner.nextInt();
+                int triangleHeight = (2 * area) / base;
+                System.out.println("The area of your triangle is: " + triangleHeight);
             } else if (rightTriYN.equalsIgnoreCase("no") || rightTriYN.equalsIgnoreCase("n")){
 
             }
