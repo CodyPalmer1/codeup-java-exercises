@@ -2,8 +2,8 @@ package util;
 import java.util.Scanner;
 public class Input {
     private static final Scanner scanner = new Scanner(System.in);
-    public static String getString(String prompt){
-        System.out.println(prompt);
+    public static String getString(){
+        System.out.println();
         return scanner.nextLine();
     }
     public static boolean yesNo(){
@@ -22,7 +22,7 @@ public class Input {
     }
     public static int getInt(){
         try {
-            return Integer.parseInt(getString("Please input a number: "));
+            return Integer.parseInt(getString());
         }catch (NumberFormatException e){
             System.out.println("Not a number.");
             return getInt();
@@ -39,10 +39,13 @@ public class Input {
     }
     public static double getDouble(){
         try{
-            return Double.parseDouble(getString("Please enter a double: "));
+            return Double.parseDouble(getString());
         } catch (Exception e){
             System.out.println("Not a double.");
             return getDouble();
         }
+    }
+
+    public static void clear() {
     }
 }

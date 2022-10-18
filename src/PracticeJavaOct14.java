@@ -21,7 +21,7 @@ public class PracticeJavaOct14 {
                 int height = scanner.nextInt();
                 int triangleArea = (base * height) / 2;
                 System.out.println("The area of your triangle is: " + triangleArea);
-            } else if (knowBase.equalsIgnoreCase("no") || knowBase.equalsIgnoreCase("n"){
+            } else if (knowBase.equalsIgnoreCase("no") || knowBase.equalsIgnoreCase("n")){
                 System.out.println("Please enter the hypotenuse of your triangle: ");
                 int hypotenuse = scanner.nextInt();
                 System.out.println("Please enter side two of your triangle: ");
@@ -46,5 +46,6 @@ public class PracticeJavaOct14 {
             }
         }
 
+        return null;
     }
 }

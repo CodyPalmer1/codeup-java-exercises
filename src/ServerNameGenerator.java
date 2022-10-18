@@ -1,11 +1,13 @@
 import java.util.Random;
 
 public class ServerNameGenerator {
-    public static String[] adjectives = {"Superficial", "Radical", "Separate", "Industrious", "Astonishing", "Eastern", "Cooing", "Terrific", "Unaccountable", "Optimal", "Jolly", "Funny", "Envious", "Habitual"};
-    public static String[] nouns = {"Resolution", "Potato", "Chalkboard", "Studio", "Wealth", "Energy", "Homework", "Army", "Passenger", "Penalty", "Variety", "Road", "Contract"};
+    public static String[] adjectives = {"Amazing", "Insane", "Separate", "Industrious", "Astonishing", "Eastern",
+            "Yelling", "Terrific", "Unaccountable", "Perfecting", "Jolly", "Funny", "Envious", "Habitual"};
+    public static String[] nouns = {"Resolution", "Dog", "Chalkboard", "Studio", "Basement",
+            "Power", "Work", "Army", "Driver", "Cup", "Variety", "Road", "Phone"};
 
     public static void main(String[] args) {
-        for(int i=0;i<20;i++) {
+        for(int i = 0; i < 20; i++) {
             System.out.println(returnRandom(adjectives) + "-" + returnRandom(nouns));
         }
     }
